@@ -245,6 +245,15 @@ p {
 	font-family: 'Nanum Pen Script', cursive;
 }
 
+.add-banner {
+	width: 320px;
+	margin: 0 auto;
+}
+
+.side-banner {
+	width: 160px;
+}
+
 
 
 

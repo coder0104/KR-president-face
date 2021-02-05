@@ -88,11 +88,12 @@ body {
   text-transform: uppercase;
   color: #15824B;
 	font-family: 'Nanum Pen Script', cursive;
-	font-size: 2.1rem;
+	font-size: 1.8rem;
 	line-height: 1.53;
 	text-align: center;
 	color: #35465d;
 	margin: 0 auto;
+	
 }
 
 .file-upload-image {

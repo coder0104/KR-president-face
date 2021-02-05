@@ -246,13 +246,11 @@ p {
 	font-family: 'Nanum Pen Script', cursive;
 }
 
-.add-banner {
-	width: 320px;
+.bottom-banner {
+	width: 728px;
 	margin: 0 auto;
 }
 
-.side-banner {
-	width: 160px;
 }
 .footer {
 	background-color: initial;
@@ -263,6 +261,16 @@ p {
 
 a {
    font-size: 1.5rem;
+	font-family: 'Nanum Pen Script', cursive;
+}
+
+.top-banner {
+	width: 320px;
+	margin: 0 auto;
+}
+
+.side-banner {
+	width: 140px;
 }
 
 

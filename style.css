@@ -16,7 +16,6 @@ body {
   margin: 0;
   color: #fff;
   background: #1FB264;
-  padding: 10px;
   border: none;
   border-radius: 4px;
   border-bottom: 4px solid #15824B;
@@ -71,7 +70,6 @@ body {
 }
 
 .image-title-wrap {
-  	padding: 0 15px 15px 15px;
 	color: #222;
 }
 
@@ -97,7 +95,6 @@ body {
   	max-height: 60%;
     max-width: 60%;
     margin: auto;
-    padding: 10px;
 }
 
 .remove-image {

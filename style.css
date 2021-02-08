@@ -267,6 +267,14 @@ a {
     height: 3%;
 }
 
+.mymoney {
+    margin: 0 auto;
+	font-family: 'Nanum Pen Script', cursive;
+}
+
+.kakao_ad_area {
+	width: 320px;
+}
 
 
 

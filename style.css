@@ -273,7 +273,8 @@ a {
 }
 
 .kakao_ad_area {
-	width: 320px;
+	width: 320px !important;
+	margin: 0 auto;
 }
 
 

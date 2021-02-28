@@ -365,6 +365,10 @@ input:checked + label > .knob > i:before {
 	font-size: 2em;
 }
 
+.kakao_ad_area {
+	width: 728px;
+	margin: 0 auto;
+}
 
 
 

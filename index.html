@@ -106,25 +106,23 @@
 				>
 			</div>
 		</section>
-		<h3 class="pb-2 body d-flex justify-content-center" style="
-    color: #35465d;
-">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;나라를 선택하세요<br>please select a country</h3>
-    <section class="d-flex justify-content-center">
-        <p class="d-flex align-items-center pr-3" style="
-    color: #35465d; font-size: 1.6rem;
-">US President&nbsp;&nbsp;</p>
-        <div>
-            <input type="checkbox" id="gender">
-            <label for="gender">
-                <span class="knob">
-                    
-                </span>
-            </label>
-        </div>
-        <p class="d-flex align-items-center pl-3" style="
-    color: #35465d; font-size: 1.6rem;
-">&nbsp;&nbsp;Korea President</p>
-    </section>
+		<h3 class="pb-2 body d-flex justify-content-center" style="color: #35465d;">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;나라를 선택하세요<br />please select a country
+		</h3>
+		<section class="d-flex justify-content-center">
+			<p class="d-flex align-items-center pr-3" style="color: #35465d; font-size: 1.6rem;">
+				&nbsp;&nbsp;미국 대통령<br />US President&nbsp;&nbsp;
+			</p>
+			<div>
+				<input type="checkbox" id="gender" />
+				<label for="gender">
+					<span class="knob"> </span>
+				</label>
+			</div>
+			<p class="d-flex align-items-center pl-3" style="color: #35465d; font-size: 1.6rem;">
+				&nbsp;&nbsp;Korea President
+			</p>
+		</section>
 
 		<script
 			class="jsbin"
@@ -178,43 +176,15 @@
 				<a>&copy; 코더 coder 2021. All rights Reserved. </a>
 			</div>
 		</footer>
+
 		
-		<ins
-			class="kakao_ad_area d-flex justify-content-center"
-			style="display: none;"
-			data-ad-unit="DAN-rWRy9K2oxqKpoDGa"
-			data-ad-width="320"
-			data-ad-height="100"
-		></ins>
-		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-		<div class="bottom-banner">
-			<ins
-				class="kakao_ad_area"
-				style="display: none;"
-				data-ad-unit="DAN-Y4HJFluxLdlF9n7G"
-				data-ad-width="320"
-				data-ad-height="50"
-			></ins>
-			<script
-				type="text/javascript"
-				src="//t1.daumcdn.net/kas/static/ba.min.js"
-				async
-			></script>
-		</div>
-		<div class="top-bottom-banner">
-			<ins
-				class="kakao_ad_area"
-				style="display: none;"
-				data-ad-unit="DAN-SXWFoic1Xn4gqgAN"
-				data-ad-width="320"
-				data-ad-height="50"
-			></ins>
-			<script
-				type="text/javascript"
-				src="//t1.daumcdn.net/kas/static/ba.min.js"
-				async
-			></script>
-		</div>
+			<ins class="kakao_ad_area d-flex justify-content-center" style="display:none;" 
+ data-ad-unit    = "DAN-2XfA5OtS2xMzFeGl" 
+ data-ad-width   = "728" 
+ data-ad-height  = "90"></ins> 
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		
+		
 
 		<h4 class="mt-1 text-center">*사진은 절대 어디에도 저장되지 않습니다*</h4>
 		<div class="pb-1 pt-1 search d-flex justify-content-center">
@@ -227,7 +197,7 @@
 				referrerpolicy="unsafe-url"
 			></iframe>
 		</div>
-		
+
 		<div class="coupang d-flex justify-content-center">
 			<iframe
 				src="https://coupa.ng/bRqe5l"
@@ -339,15 +309,15 @@
 			});
 		</script>
 		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 		<script type="text/javascript">
 			let Url;
 			const urlkorea = 'https://teachablemachine.withgoogle.com/models/x4kh-Nc_2/';
-			const urlusa = "https://teachablemachine.withgoogle.com/models/rZCE4YTZZ/";
+			const urlusa = 'https://teachablemachine.withgoogle.com/models/rZCE4YTZZ/';
 			let model, webcam, labelContainer, maxPredictions;
 			async function init() {
-				if (document.getElementById("gender").checked) {
-					URL = urlkorea
+				if (document.getElementById('gender').checked) {
+					URL = urlkorea;
 				} else {
 					URL = urlusa;
 				}
@@ -357,8 +327,8 @@
 				maxPredictions = model.getTotalClasses();
 				labelContainer = document.getElementById('label-container');
 				for (let i = 0; i < maxPredictions; i++) {
-					var element = document.createElement("div")
-					element.classList.add("d-flex");
+					var element = document.createElement('div');
+					element.classList.add('d-flex');
 					labelContainer.appendChild(document.createElement('div'));
 				}
 			}
@@ -369,166 +339,166 @@
 				prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
 				console.log(prediction[0].className);
 				var resultMessage;
-				if (document.getElementById("gender").checked){
-				switch (prediction[0].className) {
-					case '이승만':
-						resultMessage = '이승만';
-						break;
-					case '윤보선':
-						resultMessage = '윤보선';
-						break;
-					case '박정희':
-						resultMessage = '박정희';
-						break;
-					case '최규하':
-						resultMessage = '최규하';
-						break;
-					case '전두환':
-						resultMessage = '전두환';
-						break;
-					case '노태우':
-						resultMessage = '노태우';
-						break;
-					case '김영삼':
-						resultMessage = '김영삼';
-						break;
-					case '김대중':
-						resultMessage = '김대중';
-						break;
-					case '노무현':
-						resultMessage = '노무현';
-						break;
-					case '이명박':
-						resultMessage = '이명박';
-						break;
-					case '박근혜':
-						resultMessage = '박근혜';
-						break;
-					case '문재인':
-						resultMessage = '문재인';
-						break;
-					default:
-						resultMessage = '알수없음';
+				if (document.getElementById('gender').checked) {
+					switch (prediction[0].className) {
+						case '이승만':
+							resultMessage = '이승만';
+							break;
+						case '윤보선':
+							resultMessage = '윤보선';
+							break;
+						case '박정희':
+							resultMessage = '박정희';
+							break;
+						case '최규하':
+							resultMessage = '최규하';
+							break;
+						case '전두환':
+							resultMessage = '전두환';
+							break;
+						case '노태우':
+							resultMessage = '노태우';
+							break;
+						case '김영삼':
+							resultMessage = '김영삼';
+							break;
+						case '김대중':
+							resultMessage = '김대중';
+							break;
+						case '노무현':
+							resultMessage = '노무현';
+							break;
+						case '이명박':
+							resultMessage = '이명박';
+							break;
+						case '박근혜':
+							resultMessage = '박근혜';
+							break;
+						case '문재인':
+							resultMessage = '문재인';
+							break;
+						default:
+							resultMessage = '알수없음';
+					}
+				} else {
+					switch (prediction[0].className) {
+						case 'George Washington(조지 워싱턴)':
+							resultMessage = 'George Washington(조지 워싱턴)';
+							break;
+						case 'John Adams(존 애덤스)':
+							resultMessage = 'John Adams(존 애덤스)';
+							break;
+						case 'Thomas Jefferson(토머스 재퍼슨)':
+							resultMessage = 'Thomas Jefferson(토머스 재퍼슨)';
+							break;
+						case 'James Madison(제임스 매디슨)':
+							resultMessage = 'James Madison(제임스 매디슨)';
+							break;
+						case 'James Monroe(제임스 먼로)':
+							resultMessage = 'James Monroe(제임스 먼로)';
+							break;
+						case 'John Quincy Adams(존 퀸시 애덤스)':
+							resultMessage = 'John Quincy Adams(존 퀸시 애덤스)';
+							break;
+						case 'Martin Van Buren(마틴 밴뷰런)':
+							resultMessage = 'Martin Van Buren(마틴 밴뷰런)';
+							break;
+						case 'William Henry Harrison(윌리엄 해리슨)':
+							resultMessage = 'William Henry Harrison(윌리엄 해리슨)';
+							break;
+						case 'John Tyler(존 타일러)':
+							resultMessage = 'John Tyler(존 타일러)';
+							break;
+						case 'James Knox Polk(제임스 포크)':
+							resultMessage = 'James Knox Polk(제임스 포크)';
+							break;
+						case 'Zachary Taylor(재커리 테일러)':
+							resultMessage = 'Zachary Taylor(재커리 테일러)';
+							break;
+						case 'Millard Fillmore(밀러드 필모어)':
+							resultMessage = 'Millard Fillmore(밀러드 필모어)';
+							break;
+						case 'Franklin Pierce(프랭클린 퍼어스)':
+							resultMessage = 'Franklin Pierce(프랭클린 퍼어스)';
+							break;
+						case 'James Buchanan(제임스 뷰캐넌)':
+							resultMessage = 'James Buchanan(제임스 뷰캐넌)';
+							break;
+						case 'Abraham Lincoln(에이브러햄 링컨)':
+							resultMessage = 'Abraham Lincoln(에이브러햄 링컨)';
+							break;
+						case 'Andrew Johnson(앤드루 존슨)':
+							resultMessage = 'Andrew Johnson(앤드루 존슨)';
+							break;
+						case 'Ulysses S. Grant(율리시스 그랜트)':
+							resultMessage = 'Ulysses S. Grant(율리시스 그랜트)';
+							break;
+						case 'Rutherford B. Hayes(러더퍼드 헤이즈)':
+							resultMessage = 'Rutherford B. Hayes(러더퍼드 헤이즈)';
+							break;
+						case 'James A. Garfield(제임스 가필드)':
+							resultMessage = 'James A. Garfield(제임스 가필드)';
+							break;
+						case 'Grover Cleveland(그로버 클리블랜드)':
+							resultMessage = 'Grover Cleveland(그로버 클리블랜드)';
+							break;
+						case 'William McKinley(윌리엄 매킨리)':
+							resultMessage = 'William McKinley(윌리엄 매킨리)';
+							break;
+						case 'Theodore Roosevelt(시어도어 루스벨트)':
+							resultMessage = 'Theodore Roosevelt(시어도어 루스벨트)';
+							break;
+						case 'William Howard Taft(윌리엄 하워드 태프트)':
+							resultMessage = 'William Howard Taft(윌리엄 하워드 태프트)';
+							break;
+						case '우드로 윌슨':
+							resultMessage = 'Woodrow Wilson(우드로 윌슨)';
+							break;
+						case '워런 하딩':
+							resultMessage = 'Warren G. Harding(워런 하딩)';
+							break;
+						case 'Dwight D. Eisenhower(드와이트 아이젠하워)':
+							resultMessage = 'Dwight D. Eisenhower(드와이트 아이젠하워)';
+							break;
+						case 'John F. Kennedy(존 케네디)':
+							resultMessage = 'John F. Kennedy(존 케네디)';
+							break;
+						case 'Lyndon B. Johnson(린든 존슨)':
+							resultMessage = 'Lyndon B. Johnson(린든 존슨)';
+							break;
+						case 'Richard Milhous Nixon(리처드 닉슨)':
+							resultMessage = 'Richard Milhous Nixon(리처드 닉슨)';
+							break;
+						case 'Gerald R. Ford(제럴드 포드)':
+							resultMessage = 'Gerald R. Ford(제럴드 포드)';
+							break;
+						case 'Jimmy Carter(지미 카터)':
+							resultMessage = 'Jimmy Carter(지미 카터)';
+							break;
+						case 'George Bush(조지 부시)':
+							resultMessage = 'George Bush(조지 부시)';
+							break;
+						case 'William J. Clinton(빌 클린턴)':
+							resultMessage = 'William J. Clinton(빌 클린턴)';
+							break;
+						case 'George W. Bush Jr.(조지 부시 2세)':
+							resultMessage = 'George W. Bush Jr.(조지 부시 2세)';
+							break;
+						case 'Barack Hussein Obama(버락 오바마)':
+							resultMessage = 'Barack Hussein Obama(버락 오바마)';
+							break;
+						case 'Donald John Trump(도널드 트럼프)':
+							resultMessage = 'Donald John Trump(도널드 트럼프)';
+							break;
+						case 'Joe Biden(조 바이든)':
+							resultMessage = 'Joe Biden(조 바이든)';
+							break;
+							break;
+						default:
+							resultMessage = '알수없음';
+					}
 				}
-			} else {
-				switch (prediction[0].className) {
-					case 'George Washington(조지 워싱턴)':
-						resultMessage = 'George Washington(조지 워싱턴)';
-						break;
-					case 'John Adams(존 애덤스)':
-						resultMessage = 'John Adams(존 애덤스)';
-						break;
-					case 'Thomas Jefferson(토머스 재퍼슨)':
-						resultMessage = 'Thomas Jefferson(토머스 재퍼슨)';
-						break;
-					case 'James Madison(제임스 매디슨)':
-						resultMessage = 'James Madison(제임스 매디슨)';
-						break;
-					case 'James Monroe(제임스 먼로)':
-						resultMessage = 'James Monroe(제임스 먼로)';
-						break;
-					case 'John Quincy Adams(존 퀸시 애덤스)':
-						resultMessage = 'John Quincy Adams(존 퀸시 애덤스)';
-						break;
-					case 'Martin Van Buren(마틴 밴뷰런)':
-						resultMessage = 'Martin Van Buren(마틴 밴뷰런)';
-						break;
-					case 'William Henry Harrison(윌리엄 해리슨)':
-						resultMessage = 'William Henry Harrison(윌리엄 해리슨)';
-						break;
-					case 'John Tyler(존 타일러)':
-						resultMessage = 'John Tyler(존 타일러)';
-						break;
-					case 'James Knox Polk(제임스 포크)':
-						resultMessage = 'James Knox Polk(제임스 포크)';
-						break;
-					case 'Zachary Taylor(재커리 테일러)':
-						resultMessage = 'Zachary Taylor(재커리 테일러)';
-						break;
-					case 'Millard Fillmore(밀러드 필모어)':
-						resultMessage = 'Millard Fillmore(밀러드 필모어)';
-						break;
-					case 'Franklin Pierce(프랭클린 퍼어스)':
-						resultMessage = 'Franklin Pierce(프랭클린 퍼어스)';
-						break;
-					case 'James Buchanan(제임스 뷰캐넌)':
-						resultMessage = 'James Buchanan(제임스 뷰캐넌)';
-						break;
-					case 'Abraham Lincoln(에이브러햄 링컨)':
-						resultMessage = 'Abraham Lincoln(에이브러햄 링컨)';
-						break;
-					case 'Andrew Johnson(앤드루 존슨)':
-						resultMessage = 'Andrew Johnson(앤드루 존슨)';
-						break;
-					case 'Ulysses S. Grant(율리시스 그랜트)':
-						resultMessage = 'Ulysses S. Grant(율리시스 그랜트)';
-						break;
-					case 'Rutherford B. Hayes(러더퍼드 헤이즈)':
-						resultMessage = 'Rutherford B. Hayes(러더퍼드 헤이즈)';
-						break;
-					case 'James A. Garfield(제임스 가필드)':
-						resultMessage = 'James A. Garfield(제임스 가필드)';
-						break;
-					case 'Grover Cleveland(그로버 클리블랜드)':
-						resultMessage = 'Grover Cleveland(그로버 클리블랜드)';
-						break;
-					case 'William McKinley(윌리엄 매킨리)':
-						resultMessage = 'William McKinley(윌리엄 매킨리)';
-						break;
-					case 'Theodore Roosevelt(시어도어 루스벨트)':
-						resultMessage = 'Theodore Roosevelt(시어도어 루스벨트)';
-						break;
-					case 'William Howard Taft(윌리엄 하워드 태프트)':
-						resultMessage = 'William Howard Taft(윌리엄 하워드 태프트)';
-						break;
-					case '우드로 윌슨':
-						resultMessage = 'Woodrow Wilson(우드로 윌슨)';
-						break;
-					case '워런 하딩':
-						resultMessage = 'Warren G. Harding(워런 하딩)';
-						break;
-					case 'Dwight D. Eisenhower(드와이트 아이젠하워)':
-						resultMessage = 'Dwight D. Eisenhower(드와이트 아이젠하워)';
-						break;
-					case 'John F. Kennedy(존 케네디)':
-						resultMessage = 'John F. Kennedy(존 케네디)';
-						break;
-					case 'Lyndon B. Johnson(린든 존슨)':
-						resultMessage = 'Lyndon B. Johnson(린든 존슨)';
-						break;	
-					case 'Richard Milhous Nixon(리처드 닉슨)':
-						resultMessage = 'Richard Milhous Nixon(리처드 닉슨)';
-						break;	
-					case 'Gerald R. Ford(제럴드 포드)':
-						resultMessage = 'Gerald R. Ford(제럴드 포드)';
-						break;	
-					case 'Jimmy Carter(지미 카터)':
-						resultMessage = 'Jimmy Carter(지미 카터)';
-						break;	
-					case 'George Bush(조지 부시)':
-						resultMessage = 'George Bush(조지 부시)';
-						break;	
-					case 'William J. Clinton(빌 클린턴)':
-						resultMessage = 'William J. Clinton(빌 클린턴)';
-						break;	
-					case 'George W. Bush Jr.(조지 부시 2세)':
-						resultMessage = 'George W. Bush Jr.(조지 부시 2세)';
-						break;	
-					case 'Barack Hussein Obama(버락 오바마)':
-						resultMessage = 'Barack Hussein Obama(버락 오바마)';
-						break;	
-					case 'Donald John Trump(도널드 트럼프)':
-						resultMessage = 'Donald John Trump(도널드 트럼프)';
-						break;
-					case 'Joe Biden(조 바이든)':
-						resultMessage = 'Joe Biden(조 바이든)';
-						break;
-					break;
-                    default:
-                        resultMessage = "알수없음"
-                }
-			}
-					$('.result-message').html(resultMessage);
+				$('.result-message').html(resultMessage);
 				for (let i = 0; i < maxPredictions; i++) {
 					const classPrediction =
 						prediction[i].className +

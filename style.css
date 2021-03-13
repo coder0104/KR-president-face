@@ -370,7 +370,21 @@ input:checked + label > .knob > i:before {
 	margin: 0 auto;
 }
 
+.diddudal {
+	font-family: 'Nanum Pen Script', cursive;
+	margin: 0 auto;
+	font-size: 2rem;
+}
 
+.didaldo {
+	font-family: 'Nanum Pen Script', cursive;
+}
+
+.aldo {
+	font-family: 'Nanum Pen Script', cursive;
+	margin: 0 auto;
+	font-size: 2rem;
+}
 
 
 

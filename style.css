@@ -25,6 +25,14 @@ body {
   font-weight: 700;
 }
 
+.upload-text {
+	color: #8AB7F8;
+}
+
+.upload-text: hover{
+	color: #ffffff;
+}
+
 .file-upload-btn:hover {
   background: #1AA059;
   color: #ffffff;
@@ -59,13 +67,13 @@ body {
     position: relative;
     object-fit: contain;
     border-radius: 10px;
-    border: dashed 1.5px #35465d;
+    border: dashed 1.5px #8AB7F8;
     background-color: #ffffff;
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
-    background-color: #35465d82;
+    background-color: #8AB7F8;
     border: 1.5px dashed #ffffff;
 }
 
@@ -126,7 +134,7 @@ body {
 	font-family: 'Nanum Pen Script', cursive;
 	line-height: 1.68;
 	text-align: left;
-	color: #35465d;
+	color:#8AB7F8;
 	font-size: 2rem
 }
 
@@ -142,14 +150,14 @@ body {
 	font-family: 'Nanum Pen Script', cursive;
 	line-height: 1.67;
 	text-align: center;
-	color: #35465d;
+	color: #8AB7F8;
 }
 
 .subtitle {
 	font-family: 'Nanum Pen Script', cursive;
 	line-height: 1.53;
 	text-align: center;
-	color: #35465d;
+	color: #8AB7F8;
 }
 
 /* On screens that are 600px or less, set the background color to olive */
@@ -167,7 +175,7 @@ body {
 	font-size: 2rem;
 	line-height: 1.71;
 	text-align: center;
-	color: #98c818;
+	color: #8AB7F8;
 }
 
 .youtube-link:hover {
@@ -175,7 +183,7 @@ body {
 	font-size: 2rem;
 	line-height: 1.71;
 	text-align: center;
-	color: #98c818;
+	color: #8AB7F8;
 }
 
 .upload {
@@ -191,8 +199,8 @@ p {
 
 .try-again-btn {
 	border-radius: 40px;
-    border: solid 1.5px #35465d;
-    background-color: #35465d;
+    border: solid 1.5px #448ee4;
+    background-color: #448ee4;
 }
 
 .try-again-text {
